@@ -2,12 +2,13 @@ class Sale
 {
 	//variabler
 	Reciept kvitto;
+	KvittoSvenska kvi;
 	Sale()
 	{
 		//konstruktor
 		//kvitto = new Reciept();   //när klar sen
 	}
-	public void getInfoAndReciept(SaleInfo saleInfo)
+	public void getInfoAndReciept(SaleInfo saleInfo, int s)
 	{
 		/*
 		*vad gör denna
@@ -15,7 +16,14 @@ class Sale
 		*@param input vad?
 		*@return retur vad?
 		*/
-		kvitto=new Reciept(saleInfo);
+		if(s==1)
+		{
+			kvitto=new Reciept(saleInfo);
+		}
+		else
+		{
+			kvi=new KvittoSvenska(saleInfo);
+		}
 
 	}
 }

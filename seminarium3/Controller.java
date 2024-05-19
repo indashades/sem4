@@ -99,8 +99,8 @@ class Controller
 			kassa+=changeAmount;
 			return kassa;
 	}
-	public void lastMethod()
+	public void lastMethod(int s)
 	{
-		handelsBedrivelse.getInfoAndReciept(samling);
+		handelsBedrivelse.getInfoAndReciept(samling, s);
 	}
 }

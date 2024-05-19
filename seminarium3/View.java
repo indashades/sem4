@@ -75,7 +75,9 @@ class View
 		System.out.println("i kassa: "+controllerare.payment(temp5));
 		//höj pengar i kassa
 		//reciept och change
-		controllerare.lastMethod();
+		System.out.println("write 1 for reciept in ¨mostly english, skriv 2 för kvitto på svenska");
+		int g=in.nextInt();
+		controllerare.lastMethod(g);
 		//här klar och kör sem4 sak
 
 
