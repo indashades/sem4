@@ -77,12 +77,13 @@ class View
 		//reciept och change
 		System.out.println("write 1 for reciept in ¨mostly english, skriv 2 för kvitto på svenska");
 		int g=in.nextInt();
-		controllerare.lastMethod(g);
+		controllerare.lastMethod(g,totalSakC,totalSakT);
 		//här klar och kör sem4 sak
 
 
 
 		totalSakC.printTotal();
+
 		totalSakT.printTotalFil();
 	}
 }

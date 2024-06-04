@@ -70,8 +70,6 @@ class Controller
 		*@return b är observer 2 dvs sem4 uppgiftens klass
 		*/
 		double c = samling.taTotal();
-		a.changeValue(c);
-		b.changeValue(c);
 		return c;
 
 
@@ -99,8 +97,8 @@ class Controller
 			kassa+=changeAmount;
 			return kassa;
 	}
-	public void lastMethod(int s)
+	public void lastMethod(int s, Observer a, Observer b)
 	{
-		handelsBedrivelse.getInfoAndReciept(samling, s);
+		handelsBedrivelse.getInfoAndReciept(samling, s,a,b);
 	}
 }

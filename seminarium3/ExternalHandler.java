@@ -34,10 +34,12 @@ class ExternalHandler
 	public SaleInfo taxAndDesc(String itemIdentifier) throws NoInternetException, UnknownItemException
 	{
 		/*
-		*vad gör denna
+		*hämtar tax och desc
 		*
-		*@param input vad?
-		*@return retur vad?
+		*@throws noInternetException då den låtsas inte ha internet
+		*@throws UnknownItemException då man försöker införskaffa kärnvapen och en vanlig affär inte kan ses sälja kärnvapen till allmänheten
+		*@param itemidentifier godtyckligt textstycke som tex banan för banan men beror på vad man vill ha då de flesta verkade ha tex abc63212947369 osv
+		*@return SaleInfo som innehåller det köpta värdet om det inte kastar exception
 		*/
 		int z=3;
 		for(int i=0;i<3;i++)
